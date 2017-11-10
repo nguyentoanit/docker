@@ -9,7 +9,7 @@
 - Apache: 2.2.15
 - Mysql: 5.1.73
 - PHP: 5.6.32
-- Expose port:
+- Expose port: ``` 80 443 3306 8000 8080 ```
 
 - Description: Lamp stack with cron service. Auto start Lamp stack when user start container
 
