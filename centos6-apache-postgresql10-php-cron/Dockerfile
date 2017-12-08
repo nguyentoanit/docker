@@ -19,7 +19,7 @@ RUN yum install -y https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-
 RUN yum --enablerepo=remi install -y php php-common php-pgsql php-pdo php-mbstring
 
 RUN yum install -y postgresql10-server postgresql10
-RUN service postgresql10 initdb
+#RUN service postgresql10 initdb
 
 # Create the log file to be able to run tail
 RUN touch /var/log/cron.log
