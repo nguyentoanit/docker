@@ -7,7 +7,7 @@
 ## Dockerfile
 - OS: Centos 6.8
 - Apache: 2.2.15
-- PostgreSQL: 10
+- PostgreSQL: 8.4
 - PHP: 5.6.32
 
 - Description: Lamp stack with cron service. Auto start Lamp stack when user start container
@@ -28,8 +28,14 @@ crontab -e
 ```
 service httpd start/stop/restart
 ```
+- Initial PostgreSQL database
+
+```
+service postgresql initdb
+```
 - Start/Stop/Restart Postgresql:
 
 ```
-service postgresql10 start/stop/restart
+service postgresql start/stop/restart
+
 ```

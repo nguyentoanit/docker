@@ -16,28 +16,28 @@
 - List cron file:
 
 ```
-
-    crontab -l
-
+crontab -l
 ```
 - Edit cron file:
 
 ```
-
-    crontab -e
+crontab -e
 
 ```
 - Start/Stop/Restart apache:
 
 ```
-
-    service httpd start/stop/restart
+service httpd start/stop/restart
 
 ```
 - Start/Stop/Restart Postgresql:
 
 ```
+service postgresql-9.3 start/stop/restart
 
-    service postgresql-9.3 start/stop/restart
+```
+- Initial PostgreSQL database
 
+```
+service postgresql-9.3 initdb
 ```
