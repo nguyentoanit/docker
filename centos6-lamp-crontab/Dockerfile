@@ -4,18 +4,10 @@ MAINTAINER nguyentoanit
 RUN yum update -y
 
 #Install crontab
-RUN yum install -y crontabs yum-utils httpd mysql mysql-server wget
-
-# Create the log file to be able to run tail
-RUN touch /var/log/cron.log
-
-#Installl Apache, PHP5.6 and Mysql
-RUN wget http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
-RUN wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
-RUN rpm -Uvh remi-release-6*.rpm epel-release-6*.rpm
+RUN yum install -y http://rpms.famillecollet.com/enterprise/remi-release-6.rpm http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm crontabs yum-utils httpd mysql mysql-server
 
 RUN yum-config-manager --enable remi,remi-php56
-RUN yum install -y php php-common php-mysql
+RUN yum install -y php php-common php-mysql php-pdo
 
 #Set service to start on server boot
 RUN chkconfig mysqld on

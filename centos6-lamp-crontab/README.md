@@ -18,28 +18,20 @@
 - List cron file:
 
 ```
-
-    crontab -l
-
+crontab -l
 ```
 - Edit cron file:
 
 ```
-
-    crontab -e
-
+crontab -e
 ```
 - Start/Stop/Restart apache:
 
 ```
-
-    service httpd start/stop/restart
-
+service httpd start/stop/restart
 ```
 - Start/Stop/Restart MySQL:
 
 ```
-
-    service mysqld start/stop/restart
-
+service mysqld start/stop/restart
 ```
