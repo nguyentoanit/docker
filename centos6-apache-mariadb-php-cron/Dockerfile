@@ -16,7 +16,7 @@ RUN yum-config-manager --enable remi,remi-php56
 COPY config/MariaDB.repo /etc/yum.repos.d/MariaDB.repo
 
 #Install neccessary packages
-RUN yum --enablerepo=remi install -y php php-common php-mysqlnd php-pdo php-mbstring
+RUN yum --enablerepo=remi install -y php php-common php-mysqlnd php-pdo php-mbstring php-xml
 RUN yum install -y MariaDB-server MariaDB-client
 
 # Create the log file to be able to run tail

@@ -16,7 +16,7 @@ RUN yum-config-manager --enable remi,remi-php56
 RUN yum install -y https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-6-x86_64/pgdg-centos96-9.6-3.noarch.rpm
 
 #Install neccessary packages
-RUN yum --enablerepo=remi install -y php php-common php-pgsql php-pdo php-mbstring
+RUN yum --enablerepo=remi install -y php php-common php-pgsql php-pdo php-mbstring php-xml
 
 RUN yum install -y postgresql96-server postgresql96
 #RUN service postgresql-9.6 initdb

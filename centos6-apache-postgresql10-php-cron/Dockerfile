@@ -16,7 +16,7 @@ RUN yum-config-manager --enable remi,remi-php56
 RUN yum install -y https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-6-x86_64/pgdg-centos10-10-2.noarch.rpm
 
 #Install neccessary packages
-RUN yum --enablerepo=remi install -y php php-common php-pgsql php-pdo php-mbstring
+RUN yum --enablerepo=remi install -y php php-common php-pgsql php-pdo php-mbstring php-xml
 
 RUN yum install -y postgresql10-server postgresql10
 #RUN service postgresql10 initdb
