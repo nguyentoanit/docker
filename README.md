@@ -5,4 +5,4 @@
 - Docker Hub: https://hub.docker.com/u/nguyentoanit/
 
 # Repository
-This repository will contain anything about Docker (Docker file, Docker compose file and wiki abot docker)
+This repository will contain anything about Docker (Docker file, Docker compose file and wiki about docker)
