@@ -11,6 +11,7 @@
 - PHP: 7.2
 - NodeJS: 9.3
 - NPM: 5.5.1
+- Composer
 
 - Description: Lamp stack with cron service. Auto start Lamp stack when user start container
 
