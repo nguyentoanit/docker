@@ -20,5 +20,5 @@ RUN sudo mv composer.phar /usr/local/bin/composer
 RUN chkconfig postgresql on
 RUN chkconfig httpd on
 
-COPY scripts/start_service.sh /usr/local/bin/start_service.sh
+ADD scripts/start_service.sh /usr/local/bin/start_service.sh
 ENTRYPOINT sh /usr/local/bin/start_service.sh;/bin/bash

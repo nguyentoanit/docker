@@ -15,5 +15,5 @@ RUN chkconfig httpd on
 
 EXPOSE 80 443 3306 8000 8080
 
-COPY scripts/start_service.sh /usr/local/bin/start_service.sh
+ADD scripts/start_service.sh /usr/local/bin/start_service.sh
 ENTRYPOINT /usr/local/bin/start_service.sh;/bin/bash

@@ -13,5 +13,5 @@ RUN yum install -y php php-common php-pgsql php-pdo php-mbstring php-xml postgre
 RUN chkconfig postgresql-9.6 on
 RUN chkconfig httpd on
 
-COPY scripts/start_service.sh /usr/local/bin/start_service.sh
+ADD scripts/start_service.sh /usr/local/bin/start_service.sh
 ENTRYPOINT sh /usr/local/bin/start_service.sh;/bin/bash
