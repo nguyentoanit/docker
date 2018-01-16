@@ -28,7 +28,7 @@ crontab -e
 ```
 service nginx start/stop/restart
 ```
-- Start/Stop/Restart MariaDB:
+- Start/Stop/Restart MySQL:
 
 ```
 service mysql start/stop/restart
