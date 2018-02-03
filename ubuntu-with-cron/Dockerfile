@@ -1,5 +1,5 @@
 #Ref: https://www.ekito.fr/people/run-a-cron-job-with-docker/
-FROM ubuntu:14.04
+FROM ubuntu:latest
 MAINTAINER docker@nguyentoanit
 
 # Give execution rights on the cron job
