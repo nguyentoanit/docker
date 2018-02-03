@@ -6,8 +6,8 @@
 
 ## Dockerfile
 - OS: Ubuntu
-- Version: 14.04
 - Description: Set up Cronjob inside Container.
+- Bootstraping file (when you start container system will run these scripts): ```/usr/local/bin/start_service.sh```
 
 ## A few commom commands
 - List cron file:

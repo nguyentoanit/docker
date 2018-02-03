@@ -9,4 +9,4 @@ RUN chmod 0644 -R /etc/cron.d
 RUN touch /var/log/cron.log
 
 # Run the command on container startup
-CMD cron
+ENTRYPOINT /usr/local/bin/start_service.sh;/bin/bash
