@@ -8,5 +8,7 @@ RUN chmod 0644 -R /etc/cron.d
 # Create the log file to be able to run tail
 RUN touch /var/log/cron.log
 
+CMD cron
+
 # Run the command on container startup
 ENTRYPOINT /usr/local/bin/start_service.sh;/bin/bash
