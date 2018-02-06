@@ -5,7 +5,7 @@
 - Facebook: https://www.facebook.com/nguyentoandev
 
 ## Dockerfile
-- OS: Ubuntu 17.10
+- OS: Ubuntu
 - Description: Set up Cronjob inside Container.
 - Bootstraping file (when you start container system will run these scripts): ```/usr/local/bin/start_service.sh```
 
