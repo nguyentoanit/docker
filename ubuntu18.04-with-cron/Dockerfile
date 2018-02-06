@@ -1,5 +1,5 @@
 #Ref: https://www.ekito.fr/people/run-a-cron-job-with-docker/
-FROM ubuntu:latest
+FROM ubuntu:18.04
 MAINTAINER docker@nguyentoanit
 
 CMD cron
