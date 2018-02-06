@@ -2,7 +2,8 @@
 FROM ubuntu:latest
 MAINTAINER docker@nguyentoanit
 
-CMD cron
+CMD apt-get update
+CMD apt-get install cron -y
 
 # Run the command on container startup
 ENTRYPOINT /usr/local/bin/start_service.sh;/bin/bash
