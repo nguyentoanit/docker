@@ -16,5 +16,5 @@
 ## How to Run
 
 ```
-docker run -itd --privileged nguyentoanit/centos7-systemd
+docker run -itd --privileged nguyentoanit/lamp-centos7-apache-mysql-php7
 ```
