@@ -8,7 +8,8 @@ RUN yum install -y http://rpms.famillecollet.com/enterprise/remi-release-6.rpm h
 RUN yum-config-manager --enable remi,remi-php56 && yum install -y php php-common php-pgsql php-pdo php-mbstring php-xml postgresql10-server postgresql10
 
 #Set service to start on server boot
-RUN chkconfig postgresql10 on && chkconfig httpd on
+#RUN chkconfig postgresql10 on && chkconfig httpd on
+RUN chkconfig httpd on
 
 ADD scripts/start_service.sh /usr/local/bin/start_service.sh
 ENTRYPOINT sh /usr/local/bin/start_service.sh;/bin/bash
