@@ -9,6 +9,7 @@
 - Apache: 2.4.6
 - MariaDB: 5.5.56
 - PHP: 7.1.7
+- Libraries: php-mysqlnd php-pdo php-mbstring php-xml
 
 - Description: Lamp Stack (Centos 7, Apache, MariaDB, PHP7)
 - Start on boot: Apache, MariaDB
