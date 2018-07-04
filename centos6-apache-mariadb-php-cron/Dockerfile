@@ -8,7 +8,7 @@ RUN yum install -y http://rpms.famillecollet.com/enterprise/remi-release-6.rpm e
 ADD config/MariaDB.repo /etc/yum.repos.d/MariaDB.repo
 
 # Enable PHP repository and install neccessary packages
-RUN yum-config-manager --enable remi,remi-php56 && yum install -y php php-common php-mysqlnd php-pdo php-mbstring php-xml MariaDB-server MariaDB-client
+RUN yum-config-manager --enable remi,remi-php56 && yum install -y php php-common php-mysqlnd php-pdo php-mbstring php-xml php-pgsql php-gd php-mcrypt php-cli php-pear php-curl MariaDB-server MariaDB-client
 
 #Set service to start on server boot
 RUN chkconfig mysql on && chkconfig httpd on
