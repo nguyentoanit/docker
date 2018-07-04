@@ -11,7 +11,9 @@ ADD config/MariaDB.repo /etc/yum.repos.d/MariaDB.repo
 RUN yum-config-manager --enable remi,remi-php56 && yum install -y php php-common php-mysqlnd php-pdo php-mbstring php-xml php-pgsql php-gd php-mcrypt php-cli php-pear php-curl MariaDB-server MariaDB-client
 
 #Set service to start on server boot
-RUN chkconfig mysql on && chkconfig httpd on
+RUN chkconfig mysqld on && chkconfig httpd on
+
+EXPOSE 80 443 3306
 
 ADD scripts/start_service.sh /usr/local/bin/start_service.sh
 ENTRYPOINT sh /usr/local/bin/start_service.sh;/bin/bash
