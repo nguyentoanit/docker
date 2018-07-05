@@ -13,7 +13,7 @@ RUN yum-config-manager --enable remi,remi-php56 && yum install -y php php-common
 #Set service to start on server boot
 RUN chkconfig mysql on && chkconfig httpd on
 
-EXPOSE 80 443 3306
+EXPOSE 80 443 3306 5432
 
 ADD scripts/start_service.sh /usr/local/bin/start_service.sh
 ENTRYPOINT sh /usr/local/bin/start_service.sh;/bin/bash
