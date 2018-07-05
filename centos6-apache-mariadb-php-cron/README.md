@@ -9,6 +9,7 @@
 - Apache: 2.2.15
 - MariaDB: 10.3.2
 - PHP: 5.6.32
+- PostgreSQL: 8.4
 
 - Description: Lamp stack with cron service. Auto start Lamp stack when user start container
 
