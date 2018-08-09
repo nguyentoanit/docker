@@ -1,0 +1,9 @@
+version: '3'
+services:
+  stack:
+    build: .
+    # image: "nguyentoanit/ubuntu16.04-nginx-php7.1-fpm-mysql"
+    ports:
+     - "80:80"
+     - "3306:3306"
+    
